@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-09-29T20:06:11.690Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="EWl__9SSg5GOtYaGl2Wn" version="15.3.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-09-29T20:18:06.749Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="uPsk6RMr_IGFMyq5J61u" version="15.3.7" type="github" pages="3">
   <diagram id="sqIWLGNkMrbJ-WN9G7BV" name="Analisis">
-    <mxGraphModel dx="2216" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#F4F1DE" math="0" shadow="1">
+    <mxGraphModel dx="2216" dy="968" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#F4F1DE" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -395,7 +395,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="JggefWsx0DZ4xgjZL0RD" name="Modelo de Dominio">
-    <mxGraphModel dx="2577" dy="1544" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2577" dy="1572" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="2j5grHCu39i0bSoGLTL1-0" />
         <mxCell id="2j5grHCu39i0bSoGLTL1-1" parent="2j5grHCu39i0bSoGLTL1-0" />
@@ -1058,8 +1058,8 @@
         <mxCell id="1rJ6CQaI045npBCf4SK7-48" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;AgregarPerfil&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="71" y="857" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-50" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;ActualizarProgresoCurso&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
-          <mxGeometry x="71" y="998" width="170" height="60" as="geometry" />
+        <mxCell id="1rJ6CQaI045npBCf4SK7-50" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;ActualizarNombreCompletoCuenta&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
+          <mxGeometry x="71" y="998" width="359" height="60" as="geometry" />
         </mxCell>
         <mxCell id="1rJ6CQaI045npBCf4SK7-52" value="&lt;div&gt;&amp;lt;domain event&amp;gt;&lt;/div&gt;PorcentajeProgresoVideoActualizado" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#66B2FF;strokeColor=#6666FF;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="625.5" y="927.5" width="355.5" height="60" as="geometry" />
@@ -1067,29 +1067,20 @@
         <mxCell id="1rJ6CQaI045npBCf4SK7-55" value="&lt;div&gt;&amp;lt;query&amp;gt;&lt;/div&gt;ConsultarCurso" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C7024A;strokeColor=#6F0000;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="1001" y="714" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-57" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;GenerarCertificado&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
-          <mxGeometry x="260" y="860" width="170" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="1rJ6CQaI045npBCf4SK7-58" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;ActualizarCategoriaPreferencia&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="71" y="927.5" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-60" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;AsignarDuracionVideo&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
+        <mxCell id="1rJ6CQaI045npBCf4SK7-60" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;ActualizarPlanCuenta&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="261" y="714" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-61" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;ActualizarPorcentajeProgresoVideo&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
+        <mxCell id="1rJ6CQaI045npBCf4SK7-61" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;ActualizarMembresiaCuenta&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="261" y="789" width="350" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-62" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;AumentarPuntosVideo&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
+        <mxCell id="1rJ6CQaI045npBCf4SK7-62" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;AñadorPinPerfil&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="441" y="714" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-63" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;actualizarNombreCompletodelCertificado&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
+        <mxCell id="1rJ6CQaI045npBCf4SK7-63" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;ActualizarCorreoElectronicoCuenta&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="256" y="927.5" width="355" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-64" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;ActualizarFechaInicioFinalCertificado&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
-          <mxGeometry x="256" y="998" width="355" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-66" value="&lt;div&gt;&amp;lt;domain event&amp;gt;&lt;/div&gt;ProfesorAgregado" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#66B2FF;strokeColor=#6666FF;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
-          <mxGeometry x="441" y="857" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="1rJ6CQaI045npBCf4SK7-67" value="&lt;div&gt;&amp;lt;domain event&amp;gt;&lt;/div&gt;ProgresoCursoActualziado" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#66B2FF;strokeColor=#6666FF;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="625.5" y="714" width="170" height="60" as="geometry" />
@@ -1222,6 +1213,12 @@
         </mxCell>
         <mxCell id="H3gormLKNw46c9tpqp8t-7" value="&lt;div&gt;&amp;lt;query&amp;gt;&lt;/div&gt;ConsultarContenido" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C7024A;strokeColor=#6F0000;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="811" y="390" width="179" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wr1ahaLcy9QEhb8whpmx-0" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;ActualizarFechaNacimientoCuenta&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
+          <mxGeometry x="258.5" y="857" width="355" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wr1ahaLcy9QEhb8whpmx-1" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;actualizarConfiguarionPerfil&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
+          <mxGeometry x="439" y="998" width="170" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

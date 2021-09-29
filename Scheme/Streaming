@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-29T19:05:00.027Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="TnMx6RPIGvmjdH1msP9Z" version="15.3.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-09-29T19:09:12.400Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="vF7rVXemj5aruSeyfSEY" version="15.3.7" type="github" pages="3">
   <diagram id="sqIWLGNkMrbJ-WN9G7BV" name="Analisis">
     <mxGraphModel dx="1736" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#F4F1DE" math="0" shadow="1">
       <root>
@@ -1113,13 +1113,13 @@
         <mxCell id="1rJ6CQaI045npBCf4SK7-120" value="&amp;lt;aggregate root&amp;gt;&lt;br style=&quot;font-size: 15px&quot;&gt;&lt;div style=&quot;font-size: 15px&quot;&gt;Contenido&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;strokeWidth=3;fontSize=15;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="40" y="50" width="1329" height="460" as="geometry" />
         </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-121" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;CrearCurso&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
+        <mxCell id="1rJ6CQaI045npBCf4SK7-121" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;CrearContenido&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="71" y="104" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-122" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;AgregarProfesor&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
+        <mxCell id="1rJ6CQaI045npBCf4SK7-122" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;AjustarInterfaz&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="71" y="177" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-123" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;AgregarEstudiantes&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
+        <mxCell id="1rJ6CQaI045npBCf4SK7-123" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;AgregarTendencia&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="71" y="247" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="1rJ6CQaI045npBCf4SK7-124" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;ActualizarProgresoCurso&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">

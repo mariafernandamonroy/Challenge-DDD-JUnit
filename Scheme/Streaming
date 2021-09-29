@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-29T20:34:50.020Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="pdu4CMu7cZzh0hMjVA4d" version="15.3.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-09-29T20:37:29.252Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="B20SodlMSJdr64Ahl2oi" version="15.3.7" type="github" pages="3">
   <diagram id="sqIWLGNkMrbJ-WN9G7BV" name="Analisis">
     <mxGraphModel dx="2216" dy="968" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#F4F1DE" math="0" shadow="1">
       <root>
@@ -1088,14 +1088,8 @@
         <mxCell id="1rJ6CQaI045npBCf4SK7-68" value="&lt;div&gt;&amp;lt;domain event&amp;gt;&lt;/div&gt;CalificacionCursoCalculada" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#66B2FF;strokeColor=#6666FF;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="811" y="714" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-69" value="&lt;div&gt;&amp;lt;domain event&amp;gt;&lt;/div&gt;EstadoCursoDefinido" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#66B2FF;strokeColor=#6666FF;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
-          <mxGeometry x="625.5" y="789.5" width="170" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="1rJ6CQaI045npBCf4SK7-70" value="&lt;div&gt;&amp;lt;domain event&amp;gt;&lt;/div&gt;DuracionVideoAsignado" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#66B2FF;strokeColor=#6666FF;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="811" y="789.5" width="170" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-71" value="&lt;div&gt;&amp;lt;domain event&amp;gt;&lt;/div&gt;&lt;div&gt;PuntosVideoAumentados&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#66B2FF;strokeColor=#6666FF;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
-          <mxGeometry x="625.5" y="860" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="1rJ6CQaI045npBCf4SK7-72" value="&lt;div&gt;&amp;lt;domain event&amp;gt;&lt;/div&gt;&lt;div&gt;CertificadoGenerado&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#66B2FF;strokeColor=#6666FF;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="811" y="860" width="170" height="60" as="geometry" />
@@ -1222,6 +1216,12 @@
         </mxCell>
         <mxCell id="L-gt_SPJvK_TH_OUWkb_-0" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;AgregarPreferencia&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="625.5" y="714" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L-gt_SPJvK_TH_OUWkb_-1" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;ActualizarConfiguracionPerfil&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
+          <mxGeometry x="625.5" y="789" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L-gt_SPJvK_TH_OUWkb_-2" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;ActualizarPinPerfil&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
+          <mxGeometry x="625.5" y="857" width="170" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

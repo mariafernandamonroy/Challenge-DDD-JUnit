@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-29T20:31:15.824Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="G0wf3hXrXaRqa739DOvw" version="15.3.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-09-29T20:34:50.020Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="pdu4CMu7cZzh0hMjVA4d" version="15.3.7" type="github" pages="3">
   <diagram id="sqIWLGNkMrbJ-WN9G7BV" name="Analisis">
     <mxGraphModel dx="2216" dy="968" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#F4F1DE" math="0" shadow="1">
       <root>
@@ -818,7 +818,7 @@
           <mxGeometry y="316" width="199" height="26" as="geometry" />
         </mxCell>
         <mxCell id="jAC2CTRCKxIP4zqHXKWg-8" value="[E] Perfil" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=22;fillColor=#1ba1e2;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;fontSize=14;strokeColor=#006EAF;fontColor=#ffffff;rounded=1;shadow=1;glass=1;sketch=0;" vertex="1" parent="2j5grHCu39i0bSoGLTL1-1">
-          <mxGeometry x="-76.86000000000001" y="-292.14" width="199" height="238" as="geometry">
+          <mxGeometry x="-78.00000000000001" y="-289" width="199" height="238" as="geometry">
             <mxRectangle x="240" y="-48" width="88" height="22" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1045,7 +1045,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="_qNk9s9fr45R2YQPSVvP" name="Event Storming">
-    <mxGraphModel dx="1108" dy="450" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="1">
+    <mxGraphModel dx="1108" dy="484" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="1">
       <root>
         <mxCell id="1rJ6CQaI045npBCf4SK7-0" />
         <mxCell id="1rJ6CQaI045npBCf4SK7-1" parent="1rJ6CQaI045npBCf4SK7-0" />
@@ -1084,9 +1084,6 @@
         </mxCell>
         <mxCell id="1rJ6CQaI045npBCf4SK7-63" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;ActualizarCorreoElectronicoCuenta&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="256" y="927.5" width="355" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1rJ6CQaI045npBCf4SK7-67" value="&lt;div&gt;&amp;lt;domain event&amp;gt;&lt;/div&gt;ProgresoCursoActualziado" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#66B2FF;strokeColor=#6666FF;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
-          <mxGeometry x="625.5" y="714" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="1rJ6CQaI045npBCf4SK7-68" value="&lt;div&gt;&amp;lt;domain event&amp;gt;&lt;/div&gt;CalificacionCursoCalculada" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#66B2FF;strokeColor=#6666FF;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="811" y="714" width="170" height="60" as="geometry" />
@@ -1222,6 +1219,9 @@
         </mxCell>
         <mxCell id="Wr1ahaLcy9QEhb8whpmx-1" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;actualizarConfiguarionPerfil&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
           <mxGeometry x="439" y="998" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L-gt_SPJvK_TH_OUWkb_-0" value="&amp;lt;command&amp;gt;&lt;br&gt;&lt;div&gt;AgregarPreferencia&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9933FF;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1rJ6CQaI045npBCf4SK7-1">
+          <mxGeometry x="625.5" y="714" width="170" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,4 +1,13 @@
 package com.sofkau.challenge.domain.catalogo.values;
 
-public class DocumentalId {
+import co.com.sofka.domain.generic.Identity;
+
+public class DocumentalId extends Identity {
+    private DocumentalId(String id){
+        super(id);
+    }
+
+    public DocumentalId of(String id){
+        return new DocumentalId(id);
+    }
 }

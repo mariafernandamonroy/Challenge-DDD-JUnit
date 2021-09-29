@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-29T19:17:58.119Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="AM3AKe2wmldRX04h9yWa" version="15.3.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-09-29T19:20:35.171Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="qZpPqrANDl7mkm9PAhEi" version="15.3.7" type="github" pages="3">
   <diagram id="sqIWLGNkMrbJ-WN9G7BV" name="Analisis">
     <mxGraphModel dx="2216" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#F4F1DE" math="0" shadow="1">
       <root>
@@ -168,7 +168,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="trgfa5lTmx6N_DwQ2fjm-30" value="SC: Streaming domético" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#AB005B;strokeColor=#E07A5F;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-30" value="SC: Streaming doméstico" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#AB005B;strokeColor=#E07A5F;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="723" y="667" width="140" height="90" as="geometry" />
         </mxCell>
         <mxCell id="trgfa5lTmx6N_DwQ2fjm-31" value="SS: Streming Internacional" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1">

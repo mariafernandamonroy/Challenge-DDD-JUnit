@@ -1,1 +1,136 @@
-<mxfile host="app.diagrams.net" modified="2021-09-29T13:59:03.733Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" version="15.3.7" etag="NKujJ-F9nWDW5uGMxbIM" type="github"><diagram id="sqIWLGNkMrbJ-WN9G7BV">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-09-29T15:53:59.399Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="lOjs6TUxspAGJ2b7xhcd" version="15.3.7" type="github">
+  <diagram id="sqIWLGNkMrbJ-WN9G7BV" name="Analisis">
+    <mxGraphModel dx="1736" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#F4F1DE" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-1" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=6;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="92" y="118" width="1422" height="736" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-2" value="&lt;b style=&quot;font-size: 28px;&quot;&gt;Dominio del negocio&lt;/b&gt;: Netflix" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=4;fontSize=28;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="112" y="74" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-24" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7E0BB;strokeColor=#E07A5F;fontColor=#393C56;dashed=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="120" y="144" width="320" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-25" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7E0BB;strokeColor=#E07A5F;fontColor=#393C56;dashed=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="461" y="146" width="684" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-26" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7E0BB;strokeColor=#E07A5F;fontColor=#393C56;dashed=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="457" y="368" width="684" height="216" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-27" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7E0BB;strokeColor=#E07A5F;fontColor=#393C56;dashed=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="1165.5" y="143" width="320" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-8" value="SC: Contenido" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="204" y="198" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-9" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;BC: Renta de DVD por correo&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="136" y="157" width="272" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-11" value="SG: Servicio Postal" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="202" y="318" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-12" value="SS: Plan de pago" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="198" y="436" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-51" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="1" source="trgfa5lTmx6N_DwQ2fjm-28" target="trgfa5lTmx6N_DwQ2fjm-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-29" value="&lt;b style=&quot;font-size: 18px&quot;&gt;BC: Marketing&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="642" y="381" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-32" value="&lt;b style=&quot;font-size: 18px&quot;&gt;BC: Investigación y Desarrollo&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="647" y="157" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-33" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7E0BB;strokeColor=#E07A5F;fontColor=#393C56;dashed=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="108" y="604" width="1370" height="216" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-34" value="&lt;b style=&quot;font-size: 18px&quot;&gt;BC: Administración&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="1183" y="153" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-35" value="SC: CEO" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1258" y="185" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-36" value="SC: Arquitectura tecnológica&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="812" y="210" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-37" value="SG: Equipamiento&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="477" y="210" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-38" value="SG: Almacenamiento" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="634" y="210" width="154" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-39" value="SS: Personal calificado" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="980" y="210" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-42" value="" style="group;strokeColor=default;strokeWidth=2;fontSize=18;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1254" y="888" width="293" height="103" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-43" value="BC: Contexto delimitado" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;align=left;" vertex="1" parent="trgfa5lTmx6N_DwQ2fjm-42">
+          <mxGeometry width="293" height="34.33333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-44" value="SC: Subdominio principal" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;align=left;" vertex="1" parent="trgfa5lTmx6N_DwQ2fjm-42">
+          <mxGeometry y="34.33333333333333" width="293" height="34.33333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-45" value="SS: Subdominio de soporte" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;align=left;" vertex="1" parent="trgfa5lTmx6N_DwQ2fjm-42">
+          <mxGeometry y="68.66666666666666" width="293" height="34.33333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-48" value="SC: Estrategia" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="798" y="417" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-49" value="SS: Mercadotecnia" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="634" y="417" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-50" value="SS: Publicidad" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="966" y="415" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-28" value="&lt;b style=&quot;font-size: 18px&quot;&gt;BC: Streaming&amp;nbsp;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="653" y="613" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-30" value="SC: Streaming domético" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="723" y="667" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-31" value="SS: Streming Internacional" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="490" y="667" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-46" value="SS: Contenido Original" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="962" y="665" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-47" value="SS: Contenido No Original" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1202" y="663" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-52" value="SS:Marketing" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1178" y="281" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-53" value="SS:Producción" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1342" y="283" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-54" value="SS:Finanzas" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1174" y="487" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-55" value="SS:Legal" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1338" y="379" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-56" value="SS:Contenido" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1170" y="387" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-57" value="SG: Comunicaciones" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1340" y="477" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-58" value="Referencias:&amp;nbsp;https://repositorio.up.edu.pe/bitstream/handle/11354/1076/C%C3%A9sar_Tesis_maestria_2015.pdf?sequence=1&amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;sketch=0;fontSize=20;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="120" y="897" width="1076" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-60" value="SG: Inversión" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="472" y="415" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-61" value="SG: Plan de pago" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=4;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="257" y="667" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-76" value="SG: Subdominio genéric" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1254" y="990.9966666666667" width="293" height="34.33333333333333" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -2,6 +2,8 @@ package com.sofkau.challenge.domain.catalogo.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
+import java.sql.Time;
+
 public class Temporada implements ValueObject<Temporada.Props> {
     private final Capitulo capitulo;
     private final int cantidadTemporadas;
@@ -18,7 +20,7 @@ public class Temporada implements ValueObject<Temporada.Props> {
         return new Props() {
             @Override
             public Capitulo capitulo() {
-                return capitulo;
+                return Temporada.this.capitulo;
             }
 
             @Override

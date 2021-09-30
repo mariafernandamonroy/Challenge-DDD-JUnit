@@ -3,7 +3,8 @@ package com.sofkau.challenge.domain.cuenta.values;
 import co.com.sofka.domain.generic.ValueObject;
 import com.sofkau.challenge.domain.cuenta.GeneroContenido;
 import com.sofkau.challenge.domain.cuenta.TipoContenido;
-import com.sofkau.challenge.domain.cuenta.TipoPlan;
+
+import java.util.Objects;
 
 public class Categoria implements ValueObject<Categoria.Props> {
 
@@ -11,8 +12,8 @@ public class Categoria implements ValueObject<Categoria.Props> {
     private final GeneroContenido genero;
 
     public Categoria(TipoContenido tipo, GeneroContenido genero){
-        this.tipo = tipo;
-        this.genero = genero;
+        this.tipo = Objects.requireNonNull(tipo);
+        this.genero = Objects.requireNonNull(genero);
     }
 
     @Override

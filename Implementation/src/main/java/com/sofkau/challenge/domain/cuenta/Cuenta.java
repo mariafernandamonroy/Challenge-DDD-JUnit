@@ -1,4 +1,9 @@
 package com.sofkau.challenge.domain.cuenta;
 
-public class Cuenta {
+import co.com.sofka.domain.generic.AggregateEvent;
+
+
+public class Cuenta extends AggregateEvent {
+
+
 }

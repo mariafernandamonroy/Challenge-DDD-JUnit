@@ -5,12 +5,12 @@ import co.com.sofka.domain.generic.ValueObject;
 import java.sql.Time;
 
 public class Temporada implements ValueObject<Temporada.Props> {
-    private final Capitulo capitulo;
+    private final String nombreCapitulo;
     private final int cantidadTemporadas;
     private final int cantidadCapitulos;
 
-    public Temporada(Capitulo capitulo, int cantidadTemporadas, int cantidadCapitulos){
-        this.capitulo = capitulo;
+    public Temporada(String nombreCapitulo, int cantidadTemporadas, int cantidadCapitulos){
+        this.nombreCapitulo = nombreCapitulo;
         this.cantidadTemporadas = cantidadTemporadas;
         this.cantidadCapitulos = cantidadCapitulos;
     }
@@ -19,8 +19,8 @@ public class Temporada implements ValueObject<Temporada.Props> {
     public Props value() {
         return new Props() {
             @Override
-            public Capitulo capitulo() {
-                return Temporada.this.capitulo;
+            public String nombreCapitulo() {
+                return Temporada.this.nombreCapitulo;
             }
 
             @Override
@@ -36,7 +36,7 @@ public class Temporada implements ValueObject<Temporada.Props> {
     }
 
     public interface Props{
-        Capitulo capitulo();
+        String nombreCapitulo();
         int cantidadTemporadas();
         int cantidadCapitulos();
     }

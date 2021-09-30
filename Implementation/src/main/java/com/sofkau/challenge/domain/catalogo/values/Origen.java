@@ -2,13 +2,15 @@ package com.sofkau.challenge.domain.catalogo.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
+import java.util.Objects;
+
 public class Origen implements ValueObject<Origen.Props> {
     private final String ciudad;
     private final String pais;
 
     public Origen(String ciudad, String pais){
-        this.ciudad = ciudad;
-        this.pais = pais;
+        this.ciudad = Objects.requireNonNull(ciudad);
+        this.pais = Objects.requireNonNull(pais);
     }
 
     @Override

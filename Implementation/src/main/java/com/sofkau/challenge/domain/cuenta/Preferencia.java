@@ -4,6 +4,8 @@ import co.com.sofka.domain.generic.Entity;
 import com.sofkau.challenge.domain.cuenta.values.Categoria;
 import com.sofkau.challenge.domain.cuenta.values.PreferenciaId;
 
+import java.util.Objects;
+
 public class Preferencia extends Entity<PreferenciaId> {
     private Categoria categoria;
 
@@ -12,6 +14,6 @@ public class Preferencia extends Entity<PreferenciaId> {
     }
 
     public void actualizarCategoria(Categoria categoria){
-        this.categoria = categoria;
+        this.categoria = Objects.requireNonNull(categoria);
     }
 }

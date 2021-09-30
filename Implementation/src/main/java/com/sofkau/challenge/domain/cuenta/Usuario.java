@@ -26,18 +26,18 @@ public class Usuario extends Entity<UsuarioId> {
     }
 
     public void actualizarCorreoElectronico(CorreoElectronico correoElectronico){
-        this.correoElectronico = correoElectronico;
+        this.correoElectronico =  Objects.requireNonNull(correoElectronico);
     }
 
     public void actualizarFechaNacimiento(FechaNacimiento fechaNacimiento){
-        this.fechaNacimiento = fechaNacimiento;
+        this.fechaNacimiento =  Objects.requireNonNull(fechaNacimiento);
     }
 
     public void actualizarMembresia(Membresia membresia){
-        this.membresia = membresia;
+        this.membresia =  Objects.requireNonNull(membresia);
     }
 
     public void actualizarPlan(Plan plan){
-        this.plan = plan;
+        this.plan =  Objects.requireNonNull(plan);
     }
 }

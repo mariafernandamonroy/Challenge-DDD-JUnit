@@ -4,6 +4,8 @@ import co.com.sofka.domain.generic.Entity;
 import com.sofkau.challenge.domain.cuenta.values.Configuracion;
 import com.sofkau.challenge.domain.cuenta.values.PerfilId;
 
+import java.util.Objects;
+
 public class Perfil extends Entity<PerfilId> {
     private int pin;
     private Configuracion configuracion;
@@ -17,6 +19,6 @@ public class Perfil extends Entity<PerfilId> {
     }
 
     public void actualizarConfiguracion(Configuracion configuracion){
-        this.configuracion = configuracion;
+        this.configuracion = Objects.requireNonNull(configuracion);
     }
 }

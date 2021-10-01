@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-01T17:54:32.060Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="mJXFTxgXACr3g6Hhhjuj" version="15.3.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-10-01T17:54:52.011Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36" etag="PIQ6sp4_Vn3Bd5RFuFgz" version="15.3.8" type="github" pages="3">
   <diagram id="sqIWLGNkMrbJ-WN9G7BV" name="Analisis">
-    <mxGraphModel dx="3149" dy="1286" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#F4F1DE" math="0" shadow="1">
+    <mxGraphModel dx="1837" dy="750" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#F4F1DE" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -222,7 +222,7 @@
         <mxCell id="trgfa5lTmx6N_DwQ2fjm-137" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=20;fontColor=#FFFFFF;strokeColor=#0D0705;fillColor=#F2CC8F;" parent="1" source="trgfa5lTmx6N_DwQ2fjm-81" target="trgfa5lTmx6N_DwQ2fjm-136" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="trgfa5lTmx6N_DwQ2fjm-81" value="&amp;lt;Aggregate Root&amp;gt;&lt;br style=&quot;font-size: 18px&quot;&gt;Contenido" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=3;fillColor=#F48C25;strokeColor=#C9731E;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="trgfa5lTmx6N_DwQ2fjm-81" value="&amp;lt;Aggregate Root&amp;gt;&lt;br style=&quot;font-size: 18px&quot;&gt;Catalogo" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=3;fillColor=#F48C25;strokeColor=#C9731E;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="440" y="1396" width="176" height="60" as="geometry" />
         </mxCell>
         <mxCell id="trgfa5lTmx6N_DwQ2fjm-121" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontSize=28;fontColor=#000000;strokeColor=#0D0705;fillColor=#F2CC8F;" parent="1" source="trgfa5lTmx6N_DwQ2fjm-85" target="trgfa5lTmx6N_DwQ2fjm-111" edge="1">

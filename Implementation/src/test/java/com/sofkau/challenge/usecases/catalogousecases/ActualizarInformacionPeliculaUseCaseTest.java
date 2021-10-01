@@ -4,9 +4,10 @@ import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.domain.generic.DomainEvent;
-import com.sofkau.challenge.domain.catalogo.commands.AgregarSerie;
+import com.sofkau.challenge.domain.catalogo.commands.ActualizarInformacionPelicula;
 import com.sofkau.challenge.domain.catalogo.events.CatalogoCreado;
-import com.sofkau.challenge.domain.catalogo.events.SerieAgregada;
+import com.sofkau.challenge.domain.catalogo.events.InformacionPeliculaActualizada;
+import com.sofkau.challenge.domain.catalogo.events.PeliculaAgregada;
 import com.sofkau.challenge.domain.catalogo.values.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -20,20 +21,19 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
-class AgregarSerieUseCaseTest {
+class ActualizarInformacionPeliculaUseCaseTest {
     @Mock
     private DomainEventRepository repository;
 
     @Test
-    void agregarSerie(){
-        var command = new AgregarSerie(
+    void actualizarInformacionPelicula(){
+        var command = new ActualizarInformacionPelicula(
                 CatalogoId.of("ABC123"),
-                SerieId.of("S1"),
-                new Informacion("Casa de papel","Accion"),
-                new Temporada("El robo perfecto",3,8)
+                PeliculaId.of("P1"),
+                new Informacion("Doctor Strange","Sci-fi")
         );
-        
-        var useCase = new AgregarSerieUseCase();
+        var useCase = new ActualizarInformacionPeliculaUseCase();
+
         Mockito.when(repository.getEventsBy("ABC123")).thenReturn(EventStore());
         useCase.addRepository(repository);
 
@@ -43,10 +43,10 @@ class AgregarSerieUseCaseTest {
                 .orElseThrow()
                 .getDomainEvents();
 
-        var event = (SerieAgregada) events.get(0);
-        Assertions.assertEquals("S1",event.getSerieId().value());
-        Assertions.assertEquals("Casa de papel",event.getInformacion().value().titulo());
-        Assertions.assertEquals("Accion",event.getInformacion().value().categoria());
+        var event = (InformacionPeliculaActualizada) events.get(0);
+        Assertions.assertEquals("P1",event.getPeliculaId().value());
+        Assertions.assertEquals("Doctor Strange",event.getInformacion().value().titulo());
+        Assertions.assertEquals("Sci-fi",event.getInformacion().value().categoria());
         Mockito.verify(repository).getEventsBy("ABC123");
     }
 
@@ -56,10 +56,9 @@ class AgregarSerieUseCaseTest {
                         new Interfaz(15.6),
                         new Tendencia(1, "Dexter")
                 ),
-                new SerieAgregada(
-                        SerieId.of("S1"),
-                        new Informacion("Casa de papel","Accion"),
-                        new Temporada("El robo perfecto",3,8)
+                new PeliculaAgregada(
+                        PeliculaId.of("P1"),
+                        new Informacion("Doctor Strange","Sci-fi")
                 )
         );
     }

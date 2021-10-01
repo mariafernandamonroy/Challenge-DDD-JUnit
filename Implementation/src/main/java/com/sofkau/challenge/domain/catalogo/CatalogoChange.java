@@ -25,5 +25,9 @@ public class CatalogoChange extends EventChange {
             catalogo.serie = new Serie(event.getSerieId(), event.getInformacion(),event.getTemporada());
         });
 
+        apply((InformacionPeliculaActualizada event) -> {
+            catalogo.pelicula.actualizarInformacion(event.getInformacion());
+        });
+
     }
 }

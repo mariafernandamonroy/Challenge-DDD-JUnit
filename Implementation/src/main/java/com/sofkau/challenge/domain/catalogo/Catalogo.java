@@ -2,10 +2,7 @@ package com.sofkau.challenge.domain.catalogo;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-import com.sofkau.challenge.domain.catalogo.events.CatalogoCreado;
-import com.sofkau.challenge.domain.catalogo.events.InterfazAjustada;
-import com.sofkau.challenge.domain.catalogo.events.PeliculaAgregada;
-import com.sofkau.challenge.domain.catalogo.events.SerieAgregada;
+import com.sofkau.challenge.domain.catalogo.events.*;
 import com.sofkau.challenge.domain.catalogo.values.*;
 
 import java.util.List;
@@ -49,10 +46,10 @@ public class Catalogo extends AggregateEvent<CatalogoId> {
         appendChange(new SerieAgregada(serieId,informacion,temporada)).apply();
     }
 
-//    public void actualizarInformacionPelicula(Pelicula pelicula){
-//        appendChange(new InformacionPeliculaActualizada(pelicula)).apply();
-//    }
-//
+    public void actualizarInformacionPelicula(PeliculaId peliculaId, Informacion informacion){
+        appendChange(new InformacionPeliculaActualizada(peliculaId,informacion)).apply();
+    }
+
 //    public void actualizarInformacionSerie(Serie serie){
 //        appendChange(new InformacionSerieActualizada(serie)).apply();
 //    }

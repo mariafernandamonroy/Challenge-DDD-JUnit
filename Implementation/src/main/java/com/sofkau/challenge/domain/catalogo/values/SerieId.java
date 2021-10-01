@@ -7,7 +7,7 @@ public class SerieId extends Identity {
         super(id);
     }
 
-    public SerieId of(String id){
+    public static SerieId of(String id){
         return new SerieId(id);
     }
 }

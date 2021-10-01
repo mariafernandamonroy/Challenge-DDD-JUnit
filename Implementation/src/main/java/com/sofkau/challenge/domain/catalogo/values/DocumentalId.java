@@ -7,7 +7,7 @@ public class DocumentalId extends Identity {
         super(id);
     }
 
-    public DocumentalId of(String id){
+    public static DocumentalId of(String id){
         return new DocumentalId(id);
     }
 }

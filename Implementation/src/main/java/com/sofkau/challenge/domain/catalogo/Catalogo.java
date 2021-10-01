@@ -50,13 +50,13 @@ public class Catalogo extends AggregateEvent<CatalogoId> {
         appendChange(new InformacionPeliculaActualizada(peliculaId,informacion)).apply();
     }
 
-//    public void actualizarInformacionSerie(Serie serie){
-//        appendChange(new InformacionSerieActualizada(serie)).apply();
-//    }
-//
-//    public void actualizarOrigenDocumenta(Documental documental){
-//        appendChange(new OrigenDocumentalActualizado(documental)).apply();
-//    }
+    public void actualizarInformacionSerie(SerieId serieId, Informacion informacion, Temporada temporada){
+        appendChange(new InformacionSerieActualizada(serieId,informacion,temporada)).apply();
+    }
+
+    public void actualizarOrigenDocumental(DocumentalId documentalId, Origen origen){
+        appendChange(new OrigenDocumentalActualizado(documentalId,origen)).apply();
+    }
 
     public Interfaz interfaz() {
         return interfaz;

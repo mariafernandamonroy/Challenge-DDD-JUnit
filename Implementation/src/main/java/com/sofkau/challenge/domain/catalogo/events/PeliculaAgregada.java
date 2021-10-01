@@ -6,7 +6,6 @@ import com.sofkau.challenge.domain.catalogo.values.CatalogoId;
 import com.sofkau.challenge.domain.catalogo.values.Informacion;
 import com.sofkau.challenge.domain.catalogo.values.PeliculaId;
 
-import java.util.Set;
 
 public class PeliculaAgregada extends DomainEvent {
     private final PeliculaId peliculaId;

@@ -7,7 +7,7 @@ import com.sofkau.challenge.domain.catalogo.values.Interfaz;
 public class InterfazAjustada extends DomainEvent {
     private final Interfaz interfaz;
 
-    public InterfazAjustada(CatalogoId catalogoId, Interfaz interfaz) {
+    public InterfazAjustada(Interfaz interfaz) {
         super("sofkau.challenge.domain.catalogo.interfazajustada");
         this.interfaz = interfaz;
     }

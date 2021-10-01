@@ -11,10 +11,16 @@ public class NombreCompleto implements ValueObject<NombreCompleto.Props> {
 
     public NombreCompleto(String nombre, String apellido){
         this.nombre = Objects.requireNonNull(nombre);
+        if(this.nombre.isBlank()){
+            throw new IllegalArgumentException("El nombre no puede estar vacío");
+        }
         if(this.nombre.length()<=3){
             throw new IllegalArgumentException("El nombre debe tener mínimo 3 carácteres");
         }
         this.apellido = Objects.requireNonNull(apellido);
+        if(this.apellido.isBlank()){
+            throw new IllegalArgumentException("El apellido no puede estar vacío");
+        }
         if(this.apellido.length()<=3){
             throw new IllegalArgumentException("El apellido debe tener mínimo 3 carácteres");
         }

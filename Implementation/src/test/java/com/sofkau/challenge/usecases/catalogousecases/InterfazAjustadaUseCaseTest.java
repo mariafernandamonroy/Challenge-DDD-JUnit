@@ -53,7 +53,6 @@ class InterfazAjustadaUseCaseTest {
                         new Tendencia(1, "Dexter")
                 ),
                 new InterfazAjustada(
-                        CatalogoId.of("ABC123"),
                         new Interfaz(18)
                 )
         );

@@ -34,4 +34,17 @@ public class Membresia implements ValueObject<Membresia.Props> {
         Date fechaInicio();
         Date fechaFinalizacion();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Membresia membresia = (Membresia) o;
+        return Objects.equals(fechaInicio, membresia.fechaInicio) && Objects.equals(fechaFinalizacion, membresia.fechaFinalizacion);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(fechaInicio, fechaFinalizacion);
+    }
 }

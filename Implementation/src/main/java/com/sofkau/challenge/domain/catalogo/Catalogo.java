@@ -4,19 +4,19 @@ import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import com.sofkau.challenge.domain.catalogo.events.CatalogoCreado;
 import com.sofkau.challenge.domain.catalogo.events.InterfazAjustada;
-import com.sofkau.challenge.domain.catalogo.values.CatalogoId;
-import com.sofkau.challenge.domain.catalogo.values.Interfaz;
-import com.sofkau.challenge.domain.catalogo.values.Tendencia;
+import com.sofkau.challenge.domain.catalogo.events.PeliculaAgregada;
+import com.sofkau.challenge.domain.catalogo.values.*;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 public class Catalogo extends AggregateEvent<CatalogoId> {
     protected Interfaz interfaz;
     protected Tendencia tendencia;
-    protected Set<Pelicula> peliculas;
-    protected Set<Serie> series;
-    protected Set<Documental> documentales;
+    protected Pelicula pelicula;
+    protected Serie serie;
+    protected Documental documental;
 
     public Catalogo(CatalogoId catalogoId, Interfaz interfaz,Tendencia tendencia) {
         super(catalogoId);
@@ -34,14 +34,16 @@ public class Catalogo extends AggregateEvent<CatalogoId> {
         return catalogo;
     }
 
-    public void ajustarInterfaz(CatalogoId catalogoId, Interfaz interfaz){
-        appendChange(new InterfazAjustada(catalogoId, interfaz)).apply();
+    public void ajustarInterfaz(Interfaz interfaz){
+        appendChange(new InterfazAjustada(interfaz)).apply();
     }
 
-//    public void agregarPelicula(Pelicula pelicula){
-//        appendChange(new PeliculaAgregada(pelicula)).apply();
-//    }
-//
+    public void agregarPelicula(PeliculaId peliculaId, Informacion informacion){
+        Objects.requireNonNull(peliculaId);
+        Objects.requireNonNull(informacion);
+        appendChange(new PeliculaAgregada(peliculaId, informacion)).apply();
+    }
+
 //    public void agregarSerie(Serie serie){
 //        appendChange(new SerieAgregada(serie)).apply();
 //    }
@@ -57,4 +59,24 @@ public class Catalogo extends AggregateEvent<CatalogoId> {
 //    public void actualizarOrigenDocumenta(Documental documental){
 //        appendChange(new OrigenDocumentalActualizado(documental)).apply();
 //    }
+
+    public Interfaz interfaz() {
+        return interfaz;
+    }
+
+    public Tendencia tendencia() {
+        return tendencia;
+    }
+
+    public Pelicula pelicula() {
+        return pelicula;
+    }
+
+    public Serie serie() {
+        return serie;
+    }
+
+    public Documental documental() {
+        return documental;
+    }
 }

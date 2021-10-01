@@ -7,7 +7,7 @@ public class UsuarioId extends Identity {
         super(id);
     }
 
-    public UsuarioId of(String id) {
+    public static UsuarioId of(String id) {
         return new UsuarioId(id);
     }
 }

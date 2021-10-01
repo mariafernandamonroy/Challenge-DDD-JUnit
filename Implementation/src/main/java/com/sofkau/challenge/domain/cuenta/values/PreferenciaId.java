@@ -7,7 +7,7 @@ public class PreferenciaId extends Identity {
         super(id);
     }
 
-    public PreferenciaId of(String id){
+    public static PreferenciaId of(String id){
         return new PreferenciaId(id);
     }
 }

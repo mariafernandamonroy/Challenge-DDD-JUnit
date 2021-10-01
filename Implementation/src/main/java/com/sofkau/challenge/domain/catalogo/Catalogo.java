@@ -7,7 +7,6 @@ import com.sofkau.challenge.domain.catalogo.values.*;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.Set;
 
 public class Catalogo extends AggregateEvent<CatalogoId> {
     protected Interfaz interfaz;

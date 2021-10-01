@@ -38,7 +38,7 @@ public class Catalogo extends AggregateEvent<CatalogoId> {
         appendChange(new InterfazAjustada(interfaz)).apply();
     }
 
-    public void agregarPelicula(PeliculaId peliculaId, Informacion informacion){
+    public void agregarPelicula( PeliculaId peliculaId, Informacion informacion){
         Objects.requireNonNull(peliculaId);
         Objects.requireNonNull(informacion);
         appendChange(new PeliculaAgregada(peliculaId, informacion)).apply();

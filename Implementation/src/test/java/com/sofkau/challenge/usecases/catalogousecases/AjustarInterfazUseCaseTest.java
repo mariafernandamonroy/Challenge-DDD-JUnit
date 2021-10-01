@@ -4,9 +4,6 @@ import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.domain.generic.DomainEvent;
-import com.sofkau.challenge.domain.catalogo.Documental;
-import com.sofkau.challenge.domain.catalogo.Pelicula;
-import com.sofkau.challenge.domain.catalogo.Serie;
 import com.sofkau.challenge.domain.catalogo.commands.AjustarInterfaz;
 import com.sofkau.challenge.domain.catalogo.events.CatalogoCreado;
 import com.sofkau.challenge.domain.catalogo.events.InterfazAjustada;
@@ -21,7 +18,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.List;
 
 @ExtendWith(MockitoExtension.class)
-class AjustarInterfazUseCase {
+class AjustarInterfazUseCaseTest {
 
     @Mock
     private DomainEventRepository repository;
@@ -32,7 +29,7 @@ class AjustarInterfazUseCase {
                 CatalogoId.of("ABC123"),
                 new Interfaz(18)
         );
-        var useCase = new InterfazAjustadaUseCase();
+        var useCase = new AjustarInterfazUseCase();
 
         Mockito.when(repository.getEventsBy("ExecutorA")).thenReturn(EventStore());
         useCase.addRepository(repository);

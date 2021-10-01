@@ -6,7 +6,7 @@ import co.com.sofka.business.support.ResponseEvents;
 import com.sofkau.challenge.domain.catalogo.Catalogo;
 import com.sofkau.challenge.domain.catalogo.commands.AjustarInterfaz;
 
-public class InterfazAjustadaUseCase extends UseCase<RequestCommand<AjustarInterfaz>, ResponseEvents> {
+public class AjustarInterfazUseCase extends UseCase<RequestCommand<AjustarInterfaz>, ResponseEvents> {
 
     @Override
     public void executeUseCase(RequestCommand<AjustarInterfaz> ajustarInterfazRequestCommand) {

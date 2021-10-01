@@ -18,7 +18,7 @@ public class CatalogoChange extends EventChange {
         });
 
         apply((PeliculaAgregada event) -> {
-
+            catalogo.pelicula = new Pelicula(event.getPeliculaId(), event.getInformacion());
         });
     }
 }

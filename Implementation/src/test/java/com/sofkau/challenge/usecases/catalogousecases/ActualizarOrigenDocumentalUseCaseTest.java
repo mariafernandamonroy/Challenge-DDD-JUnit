@@ -4,35 +4,32 @@ import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.domain.generic.DomainEvent;
+import com.sofkau.challenge.domain.catalogo.Documental;
 import com.sofkau.challenge.domain.catalogo.commands.ActualizarInformacionPelicula;
-import com.sofkau.challenge.domain.catalogo.events.CatalogoCreado;
-import com.sofkau.challenge.domain.catalogo.events.InformacionPeliculaActualizada;
-import com.sofkau.challenge.domain.catalogo.events.PeliculaAgregada;
+import com.sofkau.challenge.domain.catalogo.commands.ActualizarOrigenDocumental;
+import com.sofkau.challenge.domain.catalogo.events.*;
 import com.sofkau.challenge.domain.catalogo.values.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@ExtendWith(MockitoExtension.class)
-class ActualizarInformacionPeliculaUseCaseTest {
+class ActualizarOrigenDocumentalUseCaseTest {
     @Mock
     private DomainEventRepository repository;
 
     @Test
-    void actualizarInformacionPelicula(){
-        var command = new ActualizarInformacionPelicula(
+    void actualizarOrigenDocumental(){
+        var command = new ActualizarOrigenDocumental(
                 CatalogoId.of("ABC123"),
-                PeliculaId.of("P1"),
-                new Informacion("Doctor Strange","Sci-fi")
+                DocumentalId.of("D1"),
+                new Origen("Buenos Aires","Argentina")
         );
-        var useCase = new ActualizarInformacionPeliculaUseCase();
+        var useCase = new ActualizarOrigenDocumentalUseCase();
 
         Mockito.when(repository.getEventsBy("ABC123")).thenReturn(EventStore());
         useCase.addRepository(repository);
@@ -43,10 +40,10 @@ class ActualizarInformacionPeliculaUseCaseTest {
                 .orElseThrow()
                 .getDomainEvents();
 
-        var event = (InformacionPeliculaActualizada) events.get(0);
-        Assertions.assertEquals("P1",event.getPeliculaId().value());
-        Assertions.assertEquals("Doctor Strange",event.getInformacion().value().titulo());
-        Assertions.assertEquals("Sci-fi",event.getInformacion().value().categoria());
+        var event = (OrigenDocumentalActualizado) events.get(0);
+        Assertions.assertEquals("D1",event.getDocumentalId().value());
+        Assertions.assertEquals("Buenos Aires",event.getOrigen().value().ciudad());
+        Assertions.assertEquals("Argentina",event.getOrigen().value().pais());
         Mockito.verify(repository).getEventsBy("ABC123");
     }
 
@@ -56,9 +53,9 @@ class ActualizarInformacionPeliculaUseCaseTest {
                         new Interfaz(15.6),
                         new Tendencia(1, "Dexter")
                 ),
-                new PeliculaAgregada(
-                        PeliculaId.of("P1"),
-                        new Informacion("Advengers","Sci-fi")
+                new DocumentalAgregado(
+                        DocumentalId.of("D1"),
+                        new Origen("Buenos Aires","Argentina")
                 )
         );
     }

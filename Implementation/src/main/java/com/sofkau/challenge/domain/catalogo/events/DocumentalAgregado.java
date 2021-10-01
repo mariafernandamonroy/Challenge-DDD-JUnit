@@ -4,12 +4,12 @@ import co.com.sofka.domain.generic.DomainEvent;
 import com.sofkau.challenge.domain.catalogo.values.DocumentalId;
 import com.sofkau.challenge.domain.catalogo.values.Origen;
 
-public class OrigenDocumentalActualizado extends DomainEvent {
+public class DocumentalAgregado extends DomainEvent {
     private final DocumentalId documentalId;
     private final Origen origen;
 
-    public OrigenDocumentalActualizado(DocumentalId documentalId, Origen origen) {
-        super("sofkau.challenge.domain.catalogo.origendocumentalactualizado");
+    public DocumentalAgregado(DocumentalId documentalId, Origen origen) {
+        super("sofkau.challenge.domain.catalogo.peliculaagregada");
         this.documentalId = documentalId;
         this.origen = origen;
     }

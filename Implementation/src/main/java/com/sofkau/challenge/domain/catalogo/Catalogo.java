@@ -46,6 +46,10 @@ public class Catalogo extends AggregateEvent<CatalogoId> {
         appendChange(new SerieAgregada(serieId,informacion,temporada)).apply();
     }
 
+    public void agregarDocumental(DocumentalId documentalId, Origen origen){
+        appendChange(new DocumentalAgregado(documentalId,origen)).apply();
+    }
+
     public void actualizarInformacionPelicula(PeliculaId peliculaId, Informacion informacion){
         appendChange(new InformacionPeliculaActualizada(peliculaId,informacion)).apply();
     }

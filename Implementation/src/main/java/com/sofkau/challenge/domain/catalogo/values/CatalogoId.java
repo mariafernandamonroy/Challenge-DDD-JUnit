@@ -7,7 +7,7 @@ public class CatalogoId extends Identity {
         super(id);
     }
 
-    public CatalogoId of(String id){
+    public static CatalogoId of(String id){
         return new CatalogoId(id);
     }
 }

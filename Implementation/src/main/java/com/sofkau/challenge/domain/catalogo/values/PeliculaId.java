@@ -7,7 +7,7 @@ public class PeliculaId extends Identity {
         super(id);
     }
 
-    public PeliculaId of(String id){
+    public static PeliculaId of(String id){
         return new PeliculaId(id);
     }
 }

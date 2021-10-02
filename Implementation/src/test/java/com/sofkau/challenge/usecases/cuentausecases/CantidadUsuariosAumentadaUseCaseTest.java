@@ -43,7 +43,6 @@ class CantidadUsuariosAumentadaUseCaseTest {
         event.setAggregateRootId(CUENTAID);
         var useCase = new CantidadUsuariosAumentadaUseCase();
 
-
         Mockito.when(repository.getEventsBy(CUENTAID)).thenReturn(EventStore());
         useCase.addRepository(repository);
 

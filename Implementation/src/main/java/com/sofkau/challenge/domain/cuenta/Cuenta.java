@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Cuenta extends AggregateEvent {
     protected CuentaId cuentaId;
-    protected Estado estado;
+    protected Estado estado = Estado.CERRADO;
     protected Preferencia preferencia;
     protected Usuario usuario;
     protected Perfil perfil;

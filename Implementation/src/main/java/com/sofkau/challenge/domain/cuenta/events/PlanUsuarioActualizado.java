@@ -1,8 +1,6 @@
 package com.sofkau.challenge.domain.cuenta.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import com.sofkau.challenge.domain.cuenta.TipoPlan;
-import com.sofkau.challenge.domain.cuenta.values.PerfilId;
 import com.sofkau.challenge.domain.cuenta.values.Plan;
 import com.sofkau.challenge.domain.cuenta.values.UsuarioId;
 

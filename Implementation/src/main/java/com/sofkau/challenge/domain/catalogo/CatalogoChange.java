@@ -3,7 +3,6 @@ package com.sofkau.challenge.domain.catalogo;
 import co.com.sofka.domain.generic.EventChange;
 import com.sofkau.challenge.domain.catalogo.events.*;
 
-import java.util.HashSet;
 
 public class CatalogoChange extends EventChange {
 

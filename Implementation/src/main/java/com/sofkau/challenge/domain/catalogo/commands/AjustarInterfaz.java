@@ -1,7 +1,6 @@
 package com.sofkau.challenge.domain.catalogo.commands;
 
 import co.com.sofka.domain.generic.Command;
-import com.sofkau.challenge.domain.catalogo.Catalogo;
 import com.sofkau.challenge.domain.catalogo.values.CatalogoId;
 import com.sofkau.challenge.domain.catalogo.values.Interfaz;
 

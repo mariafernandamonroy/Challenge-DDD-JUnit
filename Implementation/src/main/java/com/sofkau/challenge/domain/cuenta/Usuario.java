@@ -11,14 +11,16 @@ public class Usuario extends Entity<UsuarioId> {
     private FechaNacimiento fechaNacimiento;
     private Membresia membresia;
     private Plan plan;
+    private int cantidadUsuario;
 
-    public Usuario(UsuarioId usuarioId, NombreCompleto nombreCompleto, CorreoElectronico correoElectronico, FechaNacimiento fechaNacimiento, Membresia membresia, Plan plan) {
+    public Usuario(UsuarioId usuarioId, NombreCompleto nombreCompleto, CorreoElectronico correoElectronico, FechaNacimiento fechaNacimiento, Membresia membresia, Plan plan, int cantidadUsuario) {
         super(usuarioId);
         this.nombreCompleto = nombreCompleto;
         this.correoElectronico = correoElectronico;
         this.fechaNacimiento = fechaNacimiento;
         this.membresia = membresia;
         this.plan = plan;
+        this.cantidadUsuario = cantidadUsuario;
     }
 
     public void actualizarNombrecompleto(NombreCompleto nombreCompleto){
@@ -40,4 +42,9 @@ public class Usuario extends Entity<UsuarioId> {
     public void actualizarPlan(Plan plan){
         this.plan =  Objects.requireNonNull(plan);
     }
+
+    public void actualizarCantidadUsuarios(int cantidadUsuario){
+        this.cantidadUsuario = Objects.requireNonNull(cantidadUsuario);
+    }
+
 }

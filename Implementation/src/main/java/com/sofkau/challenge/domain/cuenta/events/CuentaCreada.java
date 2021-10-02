@@ -13,7 +13,7 @@ public class CuentaCreada extends DomainEvent {
     private final Estado estado;
 
     public CuentaCreada(Estado estado) {
-        super("sofkau.challenge.domain.cuenta.catalogocreado");
+        super("sofkau.challenge.domain.cuenta.cuentacreada");
         this.estado = estado;
     }
 

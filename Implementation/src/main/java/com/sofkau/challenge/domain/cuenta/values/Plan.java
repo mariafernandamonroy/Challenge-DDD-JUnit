@@ -19,9 +19,9 @@ public class Plan implements ValueObject<Plan.Props> {
             throw new IllegalArgumentException("El correo debe tener mínimo 5 carácteres");
         }
         this.tipoPlan = Objects.requireNonNull(tipoPlan);
-        if(isTipoPlan(tipoPlan)){
-            throw new IllegalArgumentException("El tipo de plan no puede ser diferente a DOS_PANTALLAS,TRES_PANTALLAS,CUATRO_PANTALLAS");
-        }
+//        if(isTipoPlan(tipoPlan)){
+//            throw new IllegalArgumentException("El tipo de plan no puede ser diferente a DOS_PANTALLAS,TRES_PANTALLAS,CUATRO_PANTALLAS");
+//        }
     }
 
     private boolean isTipoPlan(TipoPlan tipoPlan) {

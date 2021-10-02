@@ -4,7 +4,9 @@ import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import com.sofkau.challenge.domain.cuenta.events.CuentaCreada;
 import com.sofkau.challenge.domain.cuenta.events.EstadoCambiado;
-import com.sofkau.challenge.domain.cuenta.values.CuentaId;
+import com.sofkau.challenge.domain.cuenta.events.PlanUsuarioActualizado;
+import com.sofkau.challenge.domain.cuenta.events.UsuarioAgregado;
+import com.sofkau.challenge.domain.cuenta.values.*;
 
 import java.util.List;
 
@@ -31,10 +33,22 @@ public class Cuenta extends AggregateEvent {
         return cuenta;
     }
 
-    public cambiarEstado(Estado estado){
+    public void cambiarEstado(Estado estado){
         appendChange(new EstadoCambiado(estado)).apply();
     }
 
+    public void agregarUsuario(NombreCompleto nombreCompleto, CorreoElectronico correoElectronico,FechaNacimiento fechaNacimiento,Membresia membresia,Plan plan,int cantidadUsuarios){
+        appendChange(new UsuarioAgregado(nombreCompleto,correoElectronico,fechaNacimiento,membresia,plan,cantidadUsuarios)).apply();
+    }
+
+    public void actualizarPlanUsuario(UsuarioId usuarioId, Plan plan){
+        appendChange(new PlanUsuarioActualizado(usuarioId,plan)).apply();
+    }
+
+
+//    public void cambiarCantidadUsuarios(){
+//
+//    }
 
     public CuentaId cuentaId() {
         return cuentaId;

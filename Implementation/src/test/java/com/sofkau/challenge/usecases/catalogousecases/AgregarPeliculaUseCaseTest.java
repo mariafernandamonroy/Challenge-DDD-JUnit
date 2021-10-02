@@ -24,21 +24,22 @@ class AgregarPeliculaUseCaseTest {
 
     @Mock
     private DomainEventRepository repository;
+    private static String CATALOGOID = "ABC123";
 
     @Test
     void agregarPelicula(){
         var command = new AgregarPelicula(
-                CatalogoId.of("ABC123"),
+                CatalogoId.of(CATALOGOID),
                 PeliculaId.of("P1"),
                 new Informacion("Escape","Terror")
         );
         var useCase = new AgregarPeliculaUseCase();
 
-        Mockito.when(repository.getEventsBy("ABC123")).thenReturn(EventStore());
+        Mockito.when(repository.getEventsBy(CATALOGOID)).thenReturn(EventStore());
         useCase.addRepository(repository);
 
         var events = UseCaseHandler.getInstance()
-                .setIdentifyExecutor("ABC123")
+                .setIdentifyExecutor(CATALOGOID)
                 .syncExecutor(useCase, new RequestCommand<>(command))
                 .orElseThrow()
                 .getDomainEvents();
@@ -47,7 +48,7 @@ class AgregarPeliculaUseCaseTest {
         Assertions.assertEquals("P1",event.getPeliculaId().value());
         Assertions.assertEquals("Escape",event.getInformacion().value().titulo());
         Assertions.assertEquals("Terror",event.getInformacion().value().categoria());
-        Mockito.verify(repository).getEventsBy("ABC123");
+        Mockito.verify(repository).getEventsBy(CATALOGOID);
     }
 
     private List<DomainEvent> EventStore() {

@@ -23,22 +23,23 @@ import static org.junit.jupiter.api.Assertions.*;
 class AgregarSerieUseCaseTest {
     @Mock
     private DomainEventRepository repository;
+    private static String CATALOGOID = "ABC123";
 
     @Test
     void agregarSerie(){
         var command = new AgregarSerie(
-                CatalogoId.of("ABC123"),
+                CatalogoId.of(CATALOGOID),
                 SerieId.of("S1"),
                 new Informacion("Casa de papel","Accion"),
                 new Temporada("El robo perfecto",3,8)
         );
         
         var useCase = new AgregarSerieUseCase();
-        Mockito.when(repository.getEventsBy("ABC123")).thenReturn(EventStore());
+        Mockito.when(repository.getEventsBy(CATALOGOID)).thenReturn(EventStore());
         useCase.addRepository(repository);
 
         var events = UseCaseHandler.getInstance()
-                .setIdentifyExecutor("ABC123")
+                .setIdentifyExecutor(CATALOGOID)
                 .syncExecutor(useCase, new RequestCommand<>(command))
                 .orElseThrow()
                 .getDomainEvents();
@@ -47,7 +48,7 @@ class AgregarSerieUseCaseTest {
         Assertions.assertEquals("S1",event.getSerieId().value());
         Assertions.assertEquals("Casa de papel",event.getInformacion().value().titulo());
         Assertions.assertEquals("Accion",event.getInformacion().value().categoria());
-        Mockito.verify(repository).getEventsBy("ABC123");
+        Mockito.verify(repository).getEventsBy(CATALOGOID);
     }
 
     private List<DomainEvent> EventStore() {

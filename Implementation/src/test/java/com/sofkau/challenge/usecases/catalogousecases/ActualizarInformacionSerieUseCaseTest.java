@@ -21,21 +21,22 @@ import static org.junit.jupiter.api.Assertions.*;
 class ActualizarInformacionSerieUseCaseTest {
     @Mock
     private DomainEventRepository repository;
+    private static String CATALOGOID = "ABC123";
 
     @Test
     void actualizarInformacionSerie(){
         var command = new ActualizarInformacionSerie(
-                CatalogoId.of("ABC123"),
+                CatalogoId.of(CATALOGOID),
                 SerieId.of("S1"),
                 new Informacion("Emily in Paris","Romance"),
                 new Temporada("Llegando a Paris",2,8)
         );
         var useCase = new ActualizarInformacionSerieUseCase();
-        Mockito.when(repository.getEventsBy("ABC123")).thenReturn(EventStore());
+        Mockito.when(repository.getEventsBy(CATALOGOID)).thenReturn(EventStore());
         useCase.addRepository(repository);
 
         var events = UseCaseHandler.getInstance()
-                .setIdentifyExecutor("ABC123")
+                .setIdentifyExecutor(CATALOGOID)
                 .syncExecutor(useCase, new RequestCommand<>(command))
                 .orElseThrow()
                 .getDomainEvents();

@@ -24,21 +24,22 @@ import static org.junit.jupiter.api.Assertions.*;
 class ActualizarOrigenDocumentalUseCaseTest {
     @Mock
     private DomainEventRepository repository;
+    private static String CATALOGOID = "ABC123";
 
     @Test
     void actualizarOrigenDocumental(){
         var command = new ActualizarOrigenDocumental(
-                CatalogoId.of("ABC123"),
+                CatalogoId.of(CATALOGOID),
                 DocumentalId.of("D1"),
                 new Origen("Buenos Aires","Argentina")
         );
         var useCase = new ActualizarOrigenDocumentalUseCase();
 
-        Mockito.when(repository.getEventsBy("ABC123")).thenReturn(EventStore());
+        Mockito.when(repository.getEventsBy(CATALOGOID)).thenReturn(EventStore());
         useCase.addRepository(repository);
 
         var events = UseCaseHandler.getInstance()
-                .setIdentifyExecutor("ABC123")
+                .setIdentifyExecutor(CATALOGOID)
                 .syncExecutor(useCase, new RequestCommand<>(command))
                 .orElseThrow()
                 .getDomainEvents();
@@ -47,7 +48,7 @@ class ActualizarOrigenDocumentalUseCaseTest {
         Assertions.assertEquals("D1",event.getDocumentalId().value());
         Assertions.assertEquals("Buenos Aires",event.getOrigen().value().ciudad());
         Assertions.assertEquals("Argentina",event.getOrigen().value().pais());
-        Mockito.verify(repository).getEventsBy("ABC123");
+        Mockito.verify(repository).getEventsBy(CATALOGOID);
     }
 
     private List<DomainEvent> EventStore() {

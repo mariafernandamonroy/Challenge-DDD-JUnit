@@ -11,7 +11,7 @@ public class AgregarUsuarioUseCase extends UseCase<RequestCommand<AgregarUsuario
     public void executeUseCase(RequestCommand<AgregarUsuario> agregarUsuarioRequestCommand) {
         var command = agregarUsuarioRequestCommand.getCommand();
         var cuenta = Cuenta.from(command.getCuentaId(),retrieveEvents());
-        cuenta.agregarUsuario(command.getNombreCompleto(), command.getCorreoElectronico(), command.getFechaNacimiento(), command.getMembresia(), command.getPlan(), command.getCantidadUsuarios());
+        cuenta.agregarUsuario(command.getUsuarioId(), command.getNombreCompleto(), command.getCorreoElectronico(), command.getFechaNacimiento(), command.getMembresia(), command.getPlan(), command.getCantidadUsuarios());
         emit().onResponse(new ResponseEvents(cuenta.getUncommittedChanges()));
     }
 }

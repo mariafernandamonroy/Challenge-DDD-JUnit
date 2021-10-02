@@ -33,6 +33,7 @@ class CantidadUsuariosAumentadaUseCaseTest {
     @Test
     void aumentarUsuarios() {
         var event = new UsuarioAgregado(
+                UsuarioId.of("U1"),
                 new NombreCompleto("Ligia", "Gongora"),
                 new CorreoElectronico("ligy@gmail.com"),
                 new FechaNacimiento(new Date(1964, 07, 18)),
@@ -60,6 +61,7 @@ class CantidadUsuariosAumentadaUseCaseTest {
 
     private List<DomainEvent> EventStore() {
         var event = new UsuarioAgregado(
+                UsuarioId.of("U1"),
                 new NombreCompleto("Ligia", "Gongora"),
                 new CorreoElectronico("ligy@gmail.com"),
                 new FechaNacimiento(new Date(1964, 07, 18)),

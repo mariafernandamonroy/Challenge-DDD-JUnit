@@ -22,6 +22,7 @@ import java.util.Date;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 @ExtendWith(MockitoExtension.class)
 class ActualizarPlanUsuarioUseCaseTest {
     @Mock
@@ -58,6 +59,7 @@ class ActualizarPlanUsuarioUseCaseTest {
                         Estado.ABIERTO
                 ),
                 new UsuarioAgregado(
+                        UsuarioId.of("U1"),
                         new NombreCompleto("Ligia","Gongora"),
                         new CorreoElectronico("ligy@gmail.com"),
                         new FechaNacimiento(new Date(1964,07,18)),

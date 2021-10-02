@@ -34,8 +34,8 @@ public class Cuenta extends AggregateEvent {
         appendChange(new EstadoCambiado(estado)).apply();
     }
 
-    public void agregarUsuario(NombreCompleto nombreCompleto, CorreoElectronico correoElectronico,FechaNacimiento fechaNacimiento,Membresia membresia,Plan plan,int cantidadUsuarios){
-        appendChange(new UsuarioAgregado(nombreCompleto,correoElectronico,fechaNacimiento,membresia,plan,cantidadUsuarios)).apply();
+    public void agregarUsuario(UsuarioId usuarioId, NombreCompleto nombreCompleto, CorreoElectronico correoElectronico,FechaNacimiento fechaNacimiento,Membresia membresia,Plan plan,int cantidadUsuarios){
+        appendChange(new UsuarioAgregado(usuarioId, nombreCompleto,correoElectronico,fechaNacimiento,membresia,plan,cantidadUsuarios)).apply();
     }
 
     public void aumentarCantidadUsuarios(int cantidaUsuarios){

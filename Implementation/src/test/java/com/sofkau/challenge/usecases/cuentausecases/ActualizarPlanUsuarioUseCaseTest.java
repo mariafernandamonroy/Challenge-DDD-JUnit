@@ -48,7 +48,7 @@ class ActualizarPlanUsuarioUseCaseTest {
 
         var event = (PlanUsuarioActualizado) events.get(0);
         Assertions.assertEquals("U1",event.getUsuarioId().value());
-        Assertions.assertEquals(TipoPlan.DOS_PANTALLAS,event.getPlan());
+        Assertions.assertEquals(TipoPlan.DOS_PANTALLAS,event.getPlan().value().tipoPlan());
         Mockito.verify(repository).getEventsBy(CUENTAID);
     }
 
